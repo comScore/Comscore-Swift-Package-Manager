@@ -23,7 +23,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ComScore",
-            url: "https://github.com/comScore/Comscore-Swift-Package-Manager/releases/download/\(PackageMetadata.version)/ComScore.xcframework.zip",
+            path: "ComScore.xcframework.zip"
             checksum: PackageMetadata.checksum
         )
     ]
