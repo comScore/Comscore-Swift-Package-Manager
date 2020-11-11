@@ -1,15 +1,9 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.3
 import PackageDescription
 
-var dependencies: [Package.Dependency] = [
-    .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "0.0.4")),
-    .package(url: "https://github.com/apple/swift-tools-support-core.git", .exact("0.1.5")),
-    .package(name: "SwiftSyntax", url: "https://github.com/apple/swift-syntax.git", .exact("0.50200.0"))
-]
-
 struct PackageMetadata {
-    static let version: String = "6.6.0"
-    static let checksum: String = "a56c3f903cc106c03d4c6720cd400211ae31df1fd05d6accb3c6aa9689cb22c4"
+    static let version: String = "6.6.1"
+    static let checksum: String = "2eef00511d1bf2685a7eb7e49506c5e8ae3d16faa57e050ffb9d327f0859299e"
 }
 
 let package = Package(
@@ -25,12 +19,11 @@ let package = Package(
             targets: ["ComScore"]
         ),
     ],
-    dependencies: dependencies,
     targets: [
         .binaryTarget(
             name: "ComScore",
-            path: "ComScore.xcframework"
+            url: "https://github.com/comScore/Comscore-Swift-Package-Manager/releases/download/\(PackageMetadata.version)/ComScore.xcframework.zip",
+            checksum: PackageMetadata.checksum
         )
-    ],
-    swiftLanguageVersions: [.v5]
+    ]
 )
