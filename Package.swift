@@ -24,7 +24,6 @@ let package = Package(
         .binaryTarget(
             name: "ComScore",
             path: "ComScore.xcframework.zip"
-            checksum: PackageMetadata.checksum
         )
     ]
 )
