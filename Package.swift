@@ -23,7 +23,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ComScore",
-            path: "ComScore.xcframework.zip"
+            path: "ComScore.xcframework"
         )
     ]
 )
