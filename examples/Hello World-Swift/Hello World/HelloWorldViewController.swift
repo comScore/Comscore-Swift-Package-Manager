@@ -1,5 +1,5 @@
 //
-//  Copyright © 2016 comScore. All rights reserved.
+//  Copyright © 2020 comScore. All rights reserved.
 //
 
 import Foundation
@@ -16,5 +16,4 @@ class HelloWorldViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 }

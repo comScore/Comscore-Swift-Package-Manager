@@ -1,5 +1,5 @@
 //
-//  Copyright © 2016 comScore. All rights reserved.
+//  Copyright © 2020 comScore. All rights reserved.
 //
 
 import UIKit
