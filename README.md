@@ -1,6 +1,5 @@
 # comScore Analytics SDK for iOS, watchOS & tvOS - delivery repo for Swift Package Manager
 
-[![Platform](https://img.shields.io/cocoapods/p/ComScore.svg?style=flat)]
 
 License
 =======
