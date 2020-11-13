@@ -21,9 +21,6 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxF-P3-Yiv">
                                 <rect key="frame" x="142" y="437" width="138" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="131" id="zav-qJ-MZP"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -33,7 +30,6 @@
                         <constraints>
                             <constraint firstItem="cxF-P3-Yiv" firstAttribute="centerX" secondItem="Gjw-Uv-oNZ" secondAttribute="centerX" id="R0W-CG-Anw"/>
                             <constraint firstItem="cxF-P3-Yiv" firstAttribute="centerY" secondItem="Gjw-Uv-oNZ" secondAttribute="centerY" id="lho-Lf-EL3"/>
-                            <constraint firstItem="cxF-P3-Yiv" firstAttribute="top" secondItem="dVj-hW-Cdn" secondAttribute="bottom" constant="269" id="qze-F6-FoU"/>
                         </constraints>
                     </view>
                 </viewController>
