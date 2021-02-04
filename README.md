@@ -4,7 +4,7 @@
 License
 =======
 
-Copyright (c) 2020 comScore, Inc.
+Copyright (c) 2021 comScore, Inc.
 
 Use of this SDK is subject to the licenses and other terms and conditions set forth herein, including the materials provided in the SDK deliverables. Your use of this SDK and/or transmission of data to Comscore constitutes your agreement to these licenses and other terms and conditions, including the Data Sharing Agreement.
 
