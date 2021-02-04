@@ -10,7 +10,7 @@ package_file_path="$execution_dir/Package.swift"
 
 framework_dir="$1/ComScore/dynamic"
 if [ ! -d "$framework_dir" ]; then
-    echo "Please provide a correct local path to the ComScore-iOS-watchOS-tvOS repository!"
+    echo "Please provide a correct local path to the ComScore-iOS-watchOS-tvOS (CocoPods) repository!"
     exit 0
 fi
 
@@ -45,22 +45,12 @@ mkdir -p variants/appletvsimulator
 cp -R tvOS/ComScore.framework variants/appletvsimulator
 lipo -remove arm64 -output variants/appletvsimulator/ComScore.framework/ComScore variants/appletvsimulator/ComScore.framework/ComScore
 
-mkdir -p variants/watchos
-cp -R watchOS/ComScore.framework variants/watchos
-lipo -remove i386 -remove x86_64 -output variants/watchos/ComScore.framework/ComScore variants/watchos/ComScore.framework/ComScore
-
-mkdir -p variants/watchsimulator
-cp -R watchOS/ComScore.framework variants/watchsimulator
-lipo -remove armv7k -remove arm64_32 -output variants/watchsimulator/ComScore.framework/ComScore variants/watchsimulator/ComScore.framework/ComScore
-
 echo "Packaging XCFramework..."
 xcodebuild -create-xcframework \
     -framework variants/iphoneos/ComScore.framework \
     -framework variants/iphonesimulator/ComScore.framework \
     -framework variants/appletvos/ComScore.framework \
     -framework variants/appletvsimulator/ComScore.framework \
-    -framework variants/watchos/ComScore.framework \
-    -framework variants/watchsimulator/ComScore.framework \
     -output "$xcframework_path"
 
 rm -rf variants
