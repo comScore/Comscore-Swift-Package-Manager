@@ -79,7 +79,7 @@ new_version="static let version: String = \"$version\""
 sed -i -e "s/$old_version/$new_version/g" $package_file_path
 rm "$package_file_path-e"
 
-echo "\nCommiting and creating a Tag..."
+printf "\nCommiting and creating a Tag..."
 git add $package_file_path
 git add $xcframework_zip_name
 git commit -m "New release: $version"
@@ -87,5 +87,5 @@ git tag -a $version -m "New release: $version"
 git push origin master
 git push origin $version
 
-echo "\nPROCESS COMPLETED SUCCESFULLY!"
+printf "\nPROCESS COMPLETED SUCCESFULLY!"
 popd > /dev/null
