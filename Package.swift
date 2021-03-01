@@ -9,9 +9,8 @@ struct PackageMetadata {
 let package = Package(
     name: "ComScore",
     platforms: [
-        .iOS(.v8),
-        .tvOS(.v9),
-        .watchOS(.v2)
+        .iOS(.v9),
+        .tvOS(.v9)
     ],
     products: [
         .library(
