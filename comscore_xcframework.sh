@@ -35,6 +35,7 @@ popd > /dev/null
 pushd $execution_dir > /dev/null
 
 echo "Creating zip..."
+rm -rf "$xcframework_zip_name"
 zip -r "$xcframework_zip_name" "$xcframework_name" > /dev/null
 rm -rf "$xcframework_name"
 
