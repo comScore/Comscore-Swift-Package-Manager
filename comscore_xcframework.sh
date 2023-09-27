@@ -62,7 +62,7 @@ git add $package_file_path
 git add $xcframework_zip_name
 git commit -m "New release: $version"
 git tag -a $version -m "New release: $version"
-git push origin master
+git push origin staging
 git push origin $version
 
 printf "\nPROCESS COMPLETED SUCCESFULLY!"
