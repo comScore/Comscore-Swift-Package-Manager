@@ -2,8 +2,8 @@
 import PackageDescription
 
 struct PackageMetadata {
-    static let version: String = "v6.12.3"
-    static let checksum: String = "4b0d794af348534fc1779d3178e0d840aa5baa9250d7ae4a59336c043de3f227"
+    static let version: String = "6.13.0"
+    static let checksum: String = "4eb0357428d077bbf1f964f5a57ed92e31d18753bcaf49be754f6c4f5836e3eb"
 }
 
 let package = Package(
