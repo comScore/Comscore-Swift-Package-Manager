@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -361,8 +361,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/comScore/Comscore-Swift-Package-Manager";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.7.1;
+				kind = exactVersion;
+				version = 6.13.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
