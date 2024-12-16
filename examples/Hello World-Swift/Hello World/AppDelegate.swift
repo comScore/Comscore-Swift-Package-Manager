@@ -15,10 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if(!UserDefaults.standard.bool(forKey:"CSTrackingDisablePreferenceKey")) {
             // Initialize ComScore library
             let publisherConfiguration = SCORPublisherConfiguration(builderBlock: { builder in
-                builder?.publisherId = "1000001"
+                builder?.publisherId = "1234567"
             })
             
             SCORAnalytics.configuration().addClient(with:publisherConfiguration)
+            SCORAnalytics.configuration().enableImplementationValidationMode()
             SCORAnalytics.start()
         }
         
