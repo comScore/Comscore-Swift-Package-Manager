@@ -362,7 +362,7 @@
 			repositoryURL = "https://github.com/comScore/Comscore-Swift-Package-Manager";
 			requirement = {
 				kind = exactVersion;
-				version = 6.14.1;
+				version = 6.15.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
