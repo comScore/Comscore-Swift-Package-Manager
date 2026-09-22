@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		204EAC3825ED1C4100D6158B /* ComScore in Frameworks */ = {isa = PBXBuildFile; productRef = 204EAC3725ED1C4100D6158B /* ComScore */; };
 		3BFA3BEC1D2BB83D00A7002E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BFA3BEB1D2BB83D00A7002E /* Settings.bundle */; };
+		421073C81AA34EBDA0A651B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA124C71745227FD35F47B81 /* SceneDelegate.swift */; };
 		6525E6CE1C749507005DFCD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525E6CD1C749507005DFCD5 /* AppDelegate.swift */; };
 		6525E6D71C749507005DFCD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6525E6D51C749507005DFCD5 /* Main.storyboard */; };
 		6525E6D91C749507005DFCD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6525E6D81C749507005DFCD5 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		6525E6DD1C749507005DFCD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		657841A41C74AB3200AA0A8A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		657841A81C74B1FF00AA0A8A /* HelloWorldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorldViewController.swift; sourceTree = "<group>"; };
+		AA124C71745227FD35F47B81 /* SceneDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				6525E6D81C749507005DFCD5 /* Assets.xcassets */,
 				6525E6DD1C749507005DFCD5 /* Info.plist */,
 				657841A81C74B1FF00AA0A8A /* HelloWorldViewController.swift */,
+				AA124C71745227FD35F47B81 /* SceneDelegate.swift */,
 			);
 			path = "Hello World";
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				657841A91C74B1FF00AA0A8A /* HelloWorldViewController.swift in Sources */,
 				6525E6CE1C749507005DFCD5 /* AppDelegate.swift in Sources */,
+				421073C81AA34EBDA0A651B7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +301,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Hello World/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +326,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Hello World/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,7 +368,7 @@
 			repositoryURL = "https://github.com/comScore/Comscore-Swift-Package-Manager";
 			requirement = {
 				kind = exactVersion;
-				version = 6.17.0;
+				version = 6.18.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
